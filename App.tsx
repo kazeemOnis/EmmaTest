@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 
 import {
   Colors,
@@ -61,6 +62,14 @@ function App(): JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  React.useEffect(() => {
+    const splashTimer = setTimeout(() => {
+      SplashScreen.hide();
+    }, 1500);
+
+    return () => clearTimeout(splashTimer);
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
