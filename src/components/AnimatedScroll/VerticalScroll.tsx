@@ -22,7 +22,6 @@ export const VerticalScroll = ({
   const ref = React.useRef<FlatList>(null);
 
   React.useEffect(() => {
-    console.log(activeScroll, activeIndex);
     if (activeScroll === 'horizontal') {
       ref.current?.scrollToIndex({
         index: activeIndex,
