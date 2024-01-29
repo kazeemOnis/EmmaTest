@@ -34,7 +34,6 @@ export const HorizontalScroll = ({
 
   React.useEffect(() => {
     if (activeScroll === 'vertical') {
-      console.log('-hereeee');
       ref.current?.scrollToIndex({
         index: activeIndex,
         animated: true,

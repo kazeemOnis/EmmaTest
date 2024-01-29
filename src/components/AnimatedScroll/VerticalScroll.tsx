@@ -46,7 +46,7 @@ export const VerticalScroll = ({
         const index = Math.round(
           event.nativeEvent.contentOffset.y / Dimensions.get('window').height,
         );
-        if (index !== activeIndex && activeScroll === 'vertical') {
+        if (activeScroll === 'vertical') {
           setActiveIndex(index);
         }
       }}
