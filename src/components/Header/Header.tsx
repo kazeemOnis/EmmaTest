@@ -25,7 +25,10 @@ const Subtext = styled.Text`
   font-size: 16px;
 `;
 
-const BackButtonWrapper = styled.TouchableOpacity``;
+const BackButtonWrapper = styled.TouchableOpacity`
+  heigh: 20px;
+  width: 20px;
+`;
 
 export const Header = ({title, subtext, goBack, hideBack}: HeaderProps) => {
   const navigation = useNavigation<any>();
