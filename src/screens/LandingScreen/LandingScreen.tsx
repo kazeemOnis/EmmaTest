@@ -37,7 +37,7 @@ export const LandingScreen: React.FC = () => {
       icon: <PiggyBank />,
     },
     {
-      text: 'Connect banks',
+      text: 'Supported banks',
       route: 'Banks',
       icon: <Building />,
     },
@@ -48,7 +48,7 @@ export const LandingScreen: React.FC = () => {
       <Wrapper showsVerticalScrollIndicator={false}>
         <Header
           title="Welcome to Kazeem's Emma test."
-          subtext="Take a scroll through Emma's team, investors or connect your banks 👇🏽"
+          subtext="Take a scroll through Emma's team, investors and supported banks 👇🏽"
           hideBack
         />
         <ContentWrapper>

@@ -19,7 +19,7 @@ const Text = styled.Text`
   margin-bottom: 8px;
 `;
 
-const SubText = styled.Text`
+const Subtext = styled.Text`
   font-family: 'Nunito';
   color: white;
   font-size: 16px;
@@ -41,7 +41,7 @@ export const Header = ({title, subtext, goBack, hideBack}: HeaderProps) => {
         </BackButtonWrapper>
       )}
       {title && <Text>{title}</Text>}
-      {subtext && <SubText>{subtext}</SubText>}
+      {subtext && <Subtext>{subtext}</Subtext>}
     </Wrapper>
   );
 };

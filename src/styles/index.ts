@@ -31,31 +31,3 @@ export const SpacedRow = styled.View`
 `;
 
 export const Div = styled.View``;
-
-export const Heading = styled.Text`
-  color: ${colors.primary};
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-`;
-
-export const TouchWrapper = styled.TouchableOpacity``;
-
-export const PlusButton = styled.TouchableOpacity`
-  background-color: ${colors.primary};
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  position: absolute;
-  bottom: 8px;
-  right: 20px;
-`;
-
-export const NormalText = styled.Text`
-  font-size: 16px;
-  font-weight: 400;
-  color: black;
-`;

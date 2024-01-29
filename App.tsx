@@ -10,7 +10,6 @@
  */
 
 import React from 'react';
-import {StatusBar} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
@@ -32,7 +31,6 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <StatusBar backgroundColor="white" barStyle="dark-content" />
       <OnboardingProvider>
         <NavigationContainer ref={navigationRef}>
           <GestureHandlerRootView style={{flex: 1}}>
