@@ -1,11 +1,15 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {FlatList} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
 import styled from '../../theme';
 import {Avatar} from '../../components';
+import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator/OnboardingNavigator';
 
 interface HorizontalScrollProps {
   data: any[];
+  dataType: 'team' | 'investor' | 'bank';
   activeIndex: number;
   imageWidth?: number;
   activeScroll: 'vertical' | 'horizontal';
@@ -26,7 +30,10 @@ export const HorizontalScroll = ({
   activeScroll,
   setActiveIndex,
   setActiveScroll,
+  dataType,
 }: HorizontalScrollProps) => {
+  const navigation =
+    useNavigation<StackNavigationProp<OnboardingStackParamList>>();
   const ref = React.useRef<FlatList>(null);
   // Default width is 75px, maximum is 150px, minimum width is 50px;
   const width =
@@ -50,6 +57,9 @@ export const HorizontalScroll = ({
       horizontal
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={{paddingHorizontal: 120}}
+      onResponderMove={_event => {
+        setActiveScroll('horizontal');
+      }}
       onScroll={event => {
         const index = Math.abs(
           Math.round(event.nativeEvent.contentOffset.x / (width + 16)),
@@ -62,14 +72,14 @@ export const HorizontalScroll = ({
           setActiveIndex(index);
         }
       }}
-      onResponderMove={_event => {
-        setActiveScroll('horizontal');
-      }}
       renderItem={({item, index}: {item: any; index: number}) => (
         <Avatar
           image={item.image}
           imageWidth={imageWidth}
           active={activeIndex === index}
+          onPress={() =>
+            navigation.navigate('Details', {id: item.id, type: dataType})
+          }
         />
       )}
       ItemSeparatorComponent={Separator}

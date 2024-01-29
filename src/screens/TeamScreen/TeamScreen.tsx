@@ -14,7 +14,7 @@ export const TeamScreen: React.FC = () => {
     <Container>
       <Wrapper>
         <Header />
-        <AnimatedScroll data={team} />
+        <AnimatedScroll data={team} dataType="team" />
       </Wrapper>
     </Container>
   );

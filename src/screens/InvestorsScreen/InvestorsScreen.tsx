@@ -14,7 +14,7 @@ export const InvestorsScreen: React.FC = () => {
     <Container>
       <Wrapper>
         <Header />
-        <AnimatedScroll data={investors} imageWidth={100} />
+        <AnimatedScroll data={investors} imageWidth={100} dataType="investor" />
       </Wrapper>
     </Container>
   );

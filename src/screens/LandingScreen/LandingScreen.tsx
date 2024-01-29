@@ -3,9 +3,9 @@ import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import styled from '../../theme';
 import {OptionSelector, Header} from '../../components';
+import {Building, PiggyBank, User} from '../../components/Icons';
 import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator/OnboardingNavigator';
 import {Container} from '../../styles';
-import {Building, PiggyBank, User} from '../../components/Icons';
 import {Option} from '../../types';
 
 const Wrapper = styled.ScrollView`

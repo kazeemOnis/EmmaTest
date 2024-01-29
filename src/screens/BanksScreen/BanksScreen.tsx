@@ -14,7 +14,7 @@ export const BanksScreen: React.FC = () => {
     <Container>
       <Wrapper>
         <Header />
-        <AnimatedScroll data={banks} imageWidth={50} />
+        <AnimatedScroll data={banks} imageWidth={50} dataType="bank" />
       </Wrapper>
     </Container>
   );

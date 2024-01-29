@@ -5,6 +5,7 @@ import {VerticalScroll} from './VerticalScroll';
 
 interface AnimatedScrollProps {
   data: any[];
+  dataType: 'team' | 'investor' | 'bank';
   imageWidth?: number;
 }
 
@@ -12,7 +13,11 @@ const Wrapper = styled.View`
   padding-vertical: 24px;
 `;
 
-export const AnimatedScroll = ({data, imageWidth}: AnimatedScrollProps) => {
+export const AnimatedScroll = ({
+  data,
+  imageWidth,
+  dataType,
+}: AnimatedScrollProps) => {
   const [index, setActiveIndex] = React.useState(0);
   const [activeScroll, setActiveScroll] = React.useState<
     'vertical' | 'horizontal'
@@ -23,6 +28,7 @@ export const AnimatedScroll = ({data, imageWidth}: AnimatedScrollProps) => {
       <Wrapper>
         <HorizontalScroll
           data={data}
+          dataType={dataType}
           activeIndex={index}
           activeScroll={activeScroll}
           setActiveIndex={setActiveIndex}

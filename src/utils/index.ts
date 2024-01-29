@@ -1,3 +1,7 @@
+export const isNumber = (value: any) => {
+  return typeof value === 'number';
+};
+
 export const team = [
   {
     id: 1,
