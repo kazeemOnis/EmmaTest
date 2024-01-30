@@ -49,15 +49,20 @@ export const Avatar = ({image, onPress, active, imageWidth}: AvatarProps) => {
     imageWidth && imageWidth <= 150 && imageWidth >= 50 ? imageWidth : 75;
 
   return (
-    <Wrapper
-      active={active}
-      width={width + 5}
-      onPress={() => {
-        onPress && onPress();
-      }}>
-      <ImageWrapper width={width}>
-        <Image source={{uri: image}} radius={width / 2} />
-      </ImageWrapper>
-    </Wrapper>
+    <React.Fragment>
+      {image && (
+        <Wrapper
+          testID="avatar"
+          active={active}
+          width={width + 5}
+          onPress={() => {
+            onPress && onPress();
+          }}>
+          <ImageWrapper width={width}>
+            <Image source={{uri: image}} radius={width / 2} />
+          </ImageWrapper>
+        </Wrapper>
+      )}
+    </React.Fragment>
   );
 };

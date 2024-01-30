@@ -1,9 +1,10 @@
 import React from 'react';
 import {Dimensions, FlatList} from 'react-native';
 import {Content} from '../../components';
+import {Data} from '../../types';
 
 interface AnimatedScrollProps {
-  data: any[];
+  data: Data[];
   activeIndex: number;
   activeScroll: 'vertical' | 'horizontal';
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -52,7 +53,7 @@ export const VerticalScroll = ({
           setActiveIndex(index);
         }
       }}
-      renderItem={({item}: {item: any}) => (
+      renderItem={({item}: {item: Data}) => (
         <Content
           title={item.title}
           subtext={item.subtext}

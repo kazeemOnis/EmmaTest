@@ -2,9 +2,10 @@ import React from 'react';
 import styled from '../../theme';
 import {HorizontalScroll} from './HorizontalScroll';
 import {VerticalScroll} from './VerticalScroll';
+import {Data} from '../../types';
 
 interface AnimatedScrollProps {
-  data: any[];
+  data: Data[];
   dataType: 'team' | 'investor' | 'bank';
   imageWidth?: number;
 }

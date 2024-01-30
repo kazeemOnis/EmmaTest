@@ -6,9 +6,9 @@ import {StackNavigationProp} from '@react-navigation/stack';
 import styled from '../../theme';
 import {Avatar} from '../../components';
 import {OnboardingStackParamList} from '../../navigation/OnboardingNavigator/OnboardingNavigator';
-
+import {Data} from '../../types';
 interface HorizontalScrollProps {
-  data: any[];
+  data: Data[];
   dataType: 'team' | 'investor' | 'bank';
   activeIndex: number;
   imageWidth?: number;
@@ -72,7 +72,7 @@ export const HorizontalScroll = ({
           setActiveIndex(index);
         }
       }}
-      renderItem={({item, index}: {item: any; index: number}) => (
+      renderItem={({item, index}: {item: Data; index: number}) => (
         <Avatar
           image={item.image}
           imageWidth={imageWidth}

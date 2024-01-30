@@ -38,9 +38,9 @@ const ContentText = styled.Text`
 export const Content = ({title, subtext, content}: ContentProps) => {
   return (
     <Wrapper>
-      {title && <Title>{title}</Title>}
-      {subtext && <Subtext>{subtext}</Subtext>}
-      {content && <ContentText>{content}</ContentText>}
+      {title && <Title testID="contentTitle">{title}</Title>}
+      {subtext && <Subtext testID="contentSubtext">{subtext}</Subtext>}
+      {content && <ContentText testID="contentContent">{content}</ContentText>}
     </Wrapper>
   );
 };

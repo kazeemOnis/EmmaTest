@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content Should not render text when title, subtext, content are not given 1`] = `
+<View
+  style={
+    [
+      {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 1334,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Content Should render content 1`] = `
+<View
+  style={
+    [
+      {
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 1334,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "white",
+          "fontFamily": "Nunito",
+          "fontSize": 24,
+          "marginBottom": 4,
+          "textAlign": "center",
+        },
+      ]
+    }
+    testID="contentTitle"
+  >
+    Kazeem
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "color": "white",
+          "fontFamily": "Nunito",
+          "fontSize": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+    testID="contentSubtext"
+  >
+    React Native Engineer
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "color": "white",
+          "fontFamily": "Nunito",
+          "fontSize": 14,
+          "marginTop": 16,
+        },
+      ]
+    }
+    testID="contentContent"
+  >
+    Experienced React Native Engineer with over 4 years of experience in building and shipping production ready apps to users
+  </Text>
+</View>
+`;

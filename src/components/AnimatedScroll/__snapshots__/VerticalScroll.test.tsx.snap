@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vertical Scroll Should render vertical scroll 1`] = `
+<RCTScrollView
+  data={
+    [
+      {
+        "content": "Experienced React Native Engineer with over 4 years of experience in building and shipping production ready apps to users",
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1579353977828-2a4eab540b9a",
+        "subtext": "React Native Engineer",
+        "title": "Kazeem",
+      },
+    ]
+  }
+  decelerationRate="fast"
+  getItem={[Function]}
+  getItemCount={[Function]}
+  initialScrollIndex={0}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onResponderMove={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsVerticalScrollIndicator={false}
+  snapToAlignment="start"
+  snapToInterval={1334}
+  stickyHeaderIndices={[]}
+  viewabilityConfigCallbackPairs={[]}
+>
+  <View>
+    <View
+      onFocusCapture={[Function]}
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          [
+            {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "height": 1334,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "white",
+                "fontFamily": "Nunito",
+                "fontSize": 24,
+                "marginBottom": 4,
+                "textAlign": "center",
+              },
+            ]
+          }
+          testID="contentTitle"
+        >
+          Kazeem
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "white",
+                "fontFamily": "Nunito",
+                "fontSize": 16,
+                "textAlign": "center",
+              },
+            ]
+          }
+          testID="contentSubtext"
+        >
+          React Native Engineer
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "white",
+                "fontFamily": "Nunito",
+                "fontSize": 14,
+                "marginTop": 16,
+              },
+            ]
+          }
+          testID="contentContent"
+        >
+          Experienced React Native Engineer with over 4 years of experience in building and shipping production ready apps to users
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

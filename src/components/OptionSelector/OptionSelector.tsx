@@ -36,7 +36,7 @@ const IconWrapper = styled.View`
 
 export const OptionSelector = ({text, icon, onPress}: OptionProps) => {
   return (
-    <OptionWrapper onPress={() => onPress()}>
+    <OptionWrapper testID="optionSelector" onPress={() => onPress()}>
       {icon && <IconWrapper>{icon}</IconWrapper>}
       <Text numberOfLines={2}>{text}</Text>
     </OptionWrapper>

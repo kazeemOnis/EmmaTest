@@ -37,6 +37,7 @@ export const Header = ({title, subtext, goBack, hideBack}: HeaderProps) => {
     <Wrapper>
       {!hideBack && (
         <BackButtonWrapper
+          testID="backButton"
           onPress={() => {
             goBack ? goBack() : navigation.goBack();
           }}>
