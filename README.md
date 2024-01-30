@@ -76,3 +76,9 @@ npm run test
 # OR using Yarn
 yarn test
 ```
+
+### Changelog
+
+1. [Add App icons](https://github.com/kazeemOnis/EmmaTest/pull/1)
+2. [Add Splash Screen](https://github.com/kazeemOnis/EmmaTest/pull/2)
+3. [Emma App Test](https://github.com/kazeemOnis/EmmaTest/pull/3)
